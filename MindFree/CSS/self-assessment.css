@@ -1,0 +1,145 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../Assets/background.png') no-repeat center center fixed; /* Use an appropriate background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: lavender;
+    border-radius: 5px;
+}
+
+.profile-icon img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Self-Assessment Section */
+.self-assessment {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+h2 {
+    color: #66CDAA;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.options input {
+    display: none;
+}
+
+.options label {
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.options input:checked + label {
+    background-color: #66CDAA;
+    color: white;
+}
+
+.next-button, .submit-button {
+    padding: 15px 30px;
+    background-color: #66CDAA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.next-button:hover, .submit-button:hover {
+    background-color: #5cb391;
+}
+
+.question-set {
+    display: none;
+}
+
+.question-set.active {
+    display: block;
+}
+
+/* Profile Icon Styles */
+.profile-icon {
+    position: relative; /* Position relative for dropdown */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning */
+    background-color: white; /* Background color */
+    min-width: 120px; /* Minimum width */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Box shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for full width */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Background color on hover */
+}
+
+/* Show the dropdown when clicked */
+.show {
+    display: block; /* Show dropdown */
+}

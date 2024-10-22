@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/ContactUs.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <a href="../Pages/homepage.html">
+            <img src="../Assets/mental-health-logos.png" alt="MindFree Logo">
+        </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Pages/AboutUs.html">About Us</a></li>
+                <li><a href="../Pages/Resources.html">Resources</a></li>
+                <li><a href="../Pages/TherapistList.html">Contact a Therapist</a></li>
+                <li><a href="../Pages/self-assessment.html">Self-Assessment</a></li>
+                <li><a href="../Pages/ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon" onclick="toggleDropdown()">
+            <img src="../Assets/ProfileIcon.png" alt="User Icon">
+            <div id="dropdown" class="dropdown-content">
+                <a href="../index.html">Logout</a>
+            </div>
+        </div>
+        <script src="../JS/ProfiletoggleDropdown.js"></script>
+    </header>
+
+    <!-- Contact Us Form -->
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <form onsubmit="submitForm(event)">
+            <div>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <i class="icon-user"></i>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+                <i class="icon-email"></i>
+            </div>
+            <div>
+                <textarea id="message" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MindFree. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Alert -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Submitted');
+        }
+    </script>
+
+</body>
+</html>

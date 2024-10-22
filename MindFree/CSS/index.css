@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255); /* Optional fallback color */
+    background: url('../Assets/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(8, 247, 63);
+}
+
+header {
+    display: flex;
+    justify-content: left; /* Ensures space between logo and buttons */
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: 20px; /* Margin to separate logo from buttons */
+}
+
+.header-buttons {
+    display: flex;
+    margin-left: auto; /* Push buttons to the right */
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Space between buttons */
+}
+
+/* White text with a green border */
+h1, h2 {
+    color: white; /* White text */
+    padding: 10px; /* Padding for text readability */
+    border-radius: 5px; /* Rounded corners */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Tagline styles */
+.taglines {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    position: relative; /* Position relative for the blanket effect */
+}
+
+/* Full-width transparent background for the taglines */
+.taglines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); /* 10% opaque white background */
+    z-index: 1; /* Place the background below the content */
+}
+
+.tagline {
+    text-align: center;
+    margin: 0 20px;
+    position: relative; /* Position relative to stack content above background */
+    z-index: 2; /* Ensure content is above the background */
+}
+
+.icon {
+    height: 60px; /* Adjust icon size */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: white; /* Ensure heading color is white */
+}
+
+p {
+    font-size: 1em;
+    max-width: 200px;
+    color: white; /* Ensure paragraph color is white */
+}

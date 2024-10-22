@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFree - Home</title>
+    <link rel="stylesheet" href="../CSS/home.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Pages/homepage.html">
+                <img src="../Assets/mental-health-logos.png" alt="MindFree Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Pages/AboutUs.html">About Us</a></li>
+                <li><a href="../Pages/Resources.html">Resources</a></li>
+                <li><a href="../Pages/TherapistList.html">Contact a Therapist</a></li>
+                <li><a href="../Pages/self-assessment.html">Self-Assessment</a></li>
+                <li><a href="../Pages/ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon" onclick="toggleDropdown()">
+            <img src="../Assets/ProfileIcon.png" alt="User Icon">
+            <div id="dropdown" class="dropdown-content">
+                <a href="../index.html">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2>Latest Articles</h2>
+        <div class="articles-container">
+            <div class="article" id="meditation1">
+                <h3>Meditation</h3>
+                <p>Simple ways to make meditation a daily habit</p>
+                <button class="read-more" onclick="showPoints('meditation1-points')">Read More</button>
+                <div class="points" id="meditation1-points">
+                    <ul>
+                        <li>Set aside a specific time each day for meditation.</li>
+                        <li>Start with just five minutes a day and gradually increase.</li>
+                        <li>Find a quiet, comfortable place to meditate.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article" id="meditation2">
+                <h3>Meditation for Beginners</h3>
+                <p>How to start your meditation journey effectively</p>
+                <button class="read-more" onclick="showPoints('meditation2-points')">Read More</button>
+                <div class="points" id="meditation2-points">
+                    <ul>
+                        <li>Focus on your breath and observe your thoughts.</li>
+                        <li>Use guided meditation apps or videos.</li>
+                        <li>Practice patience and kindness towards yourself.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article" id="mindfulness">
+                <h3>Mindfulness</h3>
+                <p>Self-care ideas that stick, even when you're busy</p>
+                <button class="read-more" onclick="showPoints('mindfulness-points')">Read More</button>
+                <div class="points" id="mindfulness-points">
+                    <ul>
+                        <li>Practice mindfulness during daily activities, like eating.</li>
+                        <li>Set reminders to take breaks and breathe.</li>
+                        <li>Engage in a brief gratitude exercise each day.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article" id="stress">
+                <h3>Stress</h3>
+                <p>Breathing exercises to reduce stress</p>
+                <button class="read-more" onclick="showPoints('stress-points')">Read More</button>
+                <div class="points" id="stress-points">
+                    <ul>
+                        <li>Practice deep breathing for a few minutes each day.</li>
+                        <li>Try the 4-7-8 breathing technique for relaxation.</li>
+                        <li>Use visualizations to enhance your breathing exercises.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../JS/ProfiletoggleDropdown.js"></script> <!-- Link to JS file -->
+    <script src="../JS/flashcard.js"></script> <!-- Link to the new JS file -->
+</body>
+</html>

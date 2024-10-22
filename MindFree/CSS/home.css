@@ -1,0 +1,154 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../Assets/background.png') no-repeat center center fixed; /* Replace with actual URL */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: lavender;
+    border-radius: 5px;
+}
+
+.profile-icon img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Articles Section */
+.banner {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    color: #66CDAA; /* Pale green for 'Latest Articles' */
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.article {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.article h3 {
+    color: orange;
+    font-size: 24px;
+}
+
+.article p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.read-more:hover {
+    background-color: darkorange;
+}
+
+/* Points Styles */
+.points {
+    display: none; /* Hidden by default */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    transition: max-height 0.3s ease;
+}
+
+.points ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Indent list items */
+}
+
+.show {
+    display: block; /* Show points when needed */
+}
+
+/* Profile Icon Styles */
+.profile-icon {
+    position: relative; /* Position relative for dropdown */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning */
+    background-color: white; /* Background color */
+    min-width: 120px; /* Minimum width */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Box shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for full width */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Background color on hover */
+}
+
+/* Show the dropdown when clicked */
+.show {
+    display: block; /* Show dropdown */
+}

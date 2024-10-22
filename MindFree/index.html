@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to MindFree</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/modal.css"> <!-- Link to modal CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Assets/mental-health-logos.png" alt="MindFree Logo" class="logo">
+            <div class="header-buttons">
+                <a href="#" class="button" onclick="openModal('loginModal')">Login</a>
+                <a href="#" class="button" onclick="openModal('registerModal')">Register</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h1>MindFree</h1>
+        <h2>Helping You Find Peace of Mind</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="taglines">
+            <div class="tagline">
+                <img src="Assets/herbEmoji.png" alt="Calm Your Mind" class="icon">
+                <h3>Calm your mind</h3>
+                <p>Discover simple, effective ways to manage stress and stay grounded in the moment.</p>
+            </div>
+            <div class="tagline">
+                <img src="Assets/sunFlowerEmoji.png" alt="Rest Better" class="icon">
+                <h3>Rest better.</h3>
+                <p>Embrace peaceful sleep with personalized tools for natural rest and relaxation.</p>
+            </div>
+            <div class="tagline">
+                <img src="Assets/FlagEmoji.png" alt="Live with Purpose" class="icon">
+                <h3>Live with purpose.</h3>
+                <p>Build resilience and navigate challenges with confidence through expert-guided support.</p>
+            </div>
+        </div>
+    </main>
+
+   <!-- Login Modal -->
+   <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <input type="email" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+        <button class="button" onclick="redirectToHome()">Login</button>
+    </div>
+</div>
+
+<!-- Registration Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('registerModal')">&times;</span>
+        <h2>Register</h2>
+        <input type="email" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+        <button class="button" onclick="redirectToHome()">Register</button>
+    </div>
+</div>
+
+
+    <script src="JS/modal.js"></script> <!-- Link to modal JS -->
+</body>
+</html>

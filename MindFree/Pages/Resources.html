@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Resources.css">
+    <title>Mental Health Resources</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Pages/homepage.html">
+            <img src="../Assets/mental-health-logos.png" alt="MindFree Logo">
+        </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Pages/AboutUs.html">About Us</a></li>
+                <li><a href="../Pages/Resources.html">Resources</a></li>
+                <li><a href="../Pages/TherapistList.html">Contact a Therapist</a></li>
+                <li><a href="../Pages/self-assessment.html">Self-Assessment</a></li>
+                <li><a href="../Pages/ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon" onclick="toggleDropdown()">
+            <img src="../Assets/ProfileIcon.png" alt="User Icon">
+            <div id="dropdown" class="dropdown-content">
+                <a href="../index.html">Logout</a>
+            </div>
+        </div>
+        <script src="../JS/ProfiletoggleDropdown.js"></script>
+    </header>
+    <main>
+        <section class="publications">
+            <h2>Our most popular publications</h2>
+            <div class="cards">
+                <div class="card" onclick="location.href='ResourcesPages/page1.html'">
+                    <img src="../Assets/ResourcesAssets/Our-Best-Mental-Health-Tips.png" alt="Best Mental Health Tips">
+                    <h3>Our best mental health tips</h3>
+                    <p>Backed by research</p>
+                </div>
+                <div class="card" onclick="location.href='ResourcesPages/page2.html'">
+                    <img src="../Assets/ResourcesAssets/how-to-anxiety-cover.jpg" alt="Manage Anxiety and Fear">
+                    <h3>How to manage anxiety and fear</h3>
+                </div>
+                <div class="card" onclick="location.href='ResourcesPages/page3.html'">
+                    <img src="../Assets/ResourcesAssets/How to manage and reduce stress_cover.jpg" alt="Manage and Reduce Stress">
+                    <h3>How to manage and reduce stress</h3>
+                </div>
+            </div>
+        </section>
+        <section class="videos">
+            <h2>Our most popular Videos</h2>
+            <div class="cards">
+                <div class="card" onclick="location.href='ResourcesPages/page4.html'">
+                    <img src="../Assets/ResourcesAssets/How to sleep better_cover-2023_2.jpg" alt="How to Sleep Better">
+                    <h3>How to sleep better</h3>
+                </div>
+                <div class="card" onclick="location.href='ResourcesPages/page5.html'">
+                    <img src="../Assets/ResourcesAssets/How-to-look-after-your-MH--exercise-publication-cover.png" alt="Mental Health with Exercise">
+                    <h3>How to look after your mental health using exercise</h3>
+                </div>
+                <div class="card" onclick="location.href='ResourcesPages/page6.html'">
+                    <img src="../Assets/ResourcesAssets/How-to-mindfulness-publication-cover.png" alt="Mental Health with Mindfulness">
+                    <h3>How to look after your mental health using mindfulness</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+</body>
+</html>

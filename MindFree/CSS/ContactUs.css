@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../Assets/background.png') no-repeat center center fixed; /* Use an appropriate background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: lavender;
+    border-radius: 5px;
+}
+
+.profile-icon img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Contact Us Form Styles */
+.contact-us {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.contact-us h2 {
+    color: #66CDAA;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-us input, 
+.contact-us textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-us .submit-button {
+    padding: 15px 30px;
+    background-color: #66CDAA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-us .submit-button:hover {
+    background-color: #5cb391;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+/* Profile Icon Styles */
+.profile-icon {
+    position: relative; /* Position relative for dropdown */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning */
+    background-color: white; /* Background color */
+    min-width: 120px; /* Minimum width */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Box shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for full width */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Background color on hover */
+}
+
+/* Show the dropdown when clicked */
+.show {
+    display: block; /* Show dropdown */
+}

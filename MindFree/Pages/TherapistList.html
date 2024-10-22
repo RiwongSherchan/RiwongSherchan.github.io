@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Therapists</title>
+    <link rel="stylesheet" href="../CSS/TherapistList.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Pages/homepage.html">
+            <img src="../Assets/mental-health-logos.png" alt="MindFree Logo">
+        </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Pages/AboutUs.html">About Us</a></li>
+                <li><a href="../Pages/Resources.html">Resources</a></li>
+                <li><a href="../Pages/TherapistList.html">Contact a Therapist</a></li>
+                <li><a href="../Pages/self-assessment.html">Self-Assessment</a></li>
+                <li><a href="../Pages/ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon" onclick="toggleDropdown()">
+            <img src="../Assets/ProfileIcon.png" alt="User Icon">
+            <div id="dropdown" class="dropdown-content">
+                <a href="../index.html">Logout</a>
+            </div>
+        </div>
+        <script src="../JS/ProfiletoggleDropdown.js"></script>
+    </header>
+    
+    <main>
+        <h1><center>List of Therapists</center></h1>
+        <div class="therapist-list">
+            <!-- Therapist 1 -->
+            <div class="therapist-card">
+                <img src="../Assets/TherapistProfilePicture/ClaudeStephens.png" alt="Claude Stephens" class="profile-pic">
+                <div class="therapist-info">
+                    <h2>Claude Stephens</h2>
+                    <p><strong>Licensed Clinical Therapist</strong> (MSW, MEd., LCSW)</p>
+                    <p>Specialties: Stress, Anxiety, Trauma, Parenting Issues, Depression</p>
+                    <p>With 25 years of experience in mental health therapy, Claudia is passionate about helping individuals...</p>
+                    <button class="btn">Get Started</button>
+                    <button class="btn secondary">View Profile</button>
+                </div>
+            </div>
+            
+            <!-- Therapist 2 -->
+            <div class="therapist-card">
+                <img src="../Assets/TherapistProfilePicture/WilliamSolari.png" alt="William Solari" class="profile-pic">
+                <div class="therapist-info">
+                    <h2>William Solari</h2>
+                    <p><strong>Licensed Professional Counselor</strong> (LPC)</p>
+                    <p>Specialties: Stress, Anxiety, Relationship Issues, Career Difficulties</p>
+                    <p>William is a Licensed Professional Counselor who offers a supportive and non-judgmental environment...</p>
+                    <button class="btn">Get Started</button>
+                    <button class="btn secondary">View Profile</button>
+                </div>
+            </div>
+            
+            <!-- Therapist 3 -->
+            <div class="therapist-card">
+                <img src="../Assets/TherapistProfilePicture/StevenGaddis.png" alt="Steven Gaddis" class="profile-pic">
+                <div class="therapist-info">
+                    <h2>Steven Gaddis</h2>
+                    <p><strong>Licensed Professional Counselor</strong> (LPC)</p>
+                    <p>Specialties: Stress, Anxiety, Addictions, Anger Management</p>
+                    <p>Steven brings 20 years of experience to his work as a counselor, with a focus on anger management...</p>
+                    <button class="btn">Get Started</button>
+                    <button class="btn secondary">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Therapist Directory. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
